@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iPayHiu</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="logo-circle">
+    <img src="logoku.jpg" alt="Logo Shop"/>
+  </div>
+  <h1>iPayHiu</h1>
+
+  <!-- Dana -->
+  <div class="payment-card">
+    <img src="dana.jpg" alt="Dana" class="logo"/>
+    <div class="account">Dana: Revan</div>
+    <button class="btn btn-copy" onclick="copyNumber('089527358407')">Salin Nomor</button>
+    <a href="https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012012023092847668140" target="_blank" class="btn btn-pay dana">Bayar via Dana</a>
+  </div>
+
+  <!-- OVO -->
+  <div class="payment-card">
+    <img src="ovo.jpg" alt="OVO" class="logo"/>
+    <div class="account">OVO: Revan</div>
+    <button class="btn btn-copy" onclick="copyNumber('089527358407')">Salin Nomor</button>
+    <a href="https://play.google.com/store/apps/details?id=ovo.id&hl=id" target="_blank" class="btn btn-pay ovo">Bayar via OVO (Android)</a>
+    <a href="https://apps.apple.com/id/app/ovo/id1142114207" target="_blank" class="btn btn-pay ovo">Bayar via OVO (iOS)</a>
+  </div>
+
+  <!-- GoPay -->
+  <div class="payment-card">
+    <img src="gopay.jpg" alt="GoPay" class="logo"/>
+    <div class="account">GoPay: Revan</div>
+    <button class="btn btn-copy" onclick="copyNumber('089527358407')">Salin Nomor</button>
+    <a href="https://play.google.com/store/apps/details?id=com.gojek.gopay" target="_blank" class="btn btn-pay gopay">Bayar via GoPay (Android)</a>
+    <a href="https://apps.apple.com/id/app/gopay-transfer-pulsa-tagihan/id6446321594" target="_blank" class="btn btn-pay gopay">Bayar via GoPay (iOS)</a>
+  </div>
+
+  <!-- SeaBank -->
+  <div class="payment-card">
+    <img src="seabank.jpg" alt="SeaBank" class="logo"/>
+    <div class="account">SeaBank: 901694028822</div>
+    <button class="btn btn-copy" onclick="copyNumber('901694028822')">Salin Nomor</button>
+    <a href="https://play.google.com/store/apps/details?id=id.co.bankbkemobile.digitalbank&hl=id" target="_blank" class="btn btn-pay seabank">SeaBank (Android)</a>
+    <a href="https://apps.apple.com/id/app/seabank/id1525477806" target="_blank" class="btn btn-pay seabank">SeaBank (iOS)</a>
+  </div>
+
+  <!-- QRIS -->
+  <div class="payment-card qr-card">
+    <img src="qr.jpg" alt="QRIS" class="logo"/>
+    <div class="account">QRIS (VAN STORE)</div>
+    <div class="qr-glow">
+      <img src="logoqr.jpg" alt="QR Code" class="qr"/>
+    </div>
+  </div>
+
+  <div class="note">
+    Note: Transfer sesuai nominal yang ditentukan. Kirim bukti pembayaran dengan jelas, no crop, no edit.
+  </div>
+
+  <!-- Contact Admin -->
+  <div class="contact-card">
+    <div class="contact-title">Contact Admin</div>
+    <a href="https://t.me/OoHiu" target="_blank" class="btn btn-telegram">@OoHiu</a>
+  </div>
+
+  <script>
+    function copyNumber(number) {
+      navigator.clipboard.writeText(number).then(() => {
+        alert('Nomor berhasil disalin: ' + number);
+      });
+    }
+  </script>
+</body>
+</html>
